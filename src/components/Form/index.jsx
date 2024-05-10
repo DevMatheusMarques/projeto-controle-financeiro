@@ -16,6 +16,18 @@ const Form = ({ handleAdd, transactionsList, setTransactionsList }) => {
             alert("O valor tem que ser positivo!");
             return;
         }
+
+        const transaction = {
+            id: generateID(),
+            desc: desc,
+            amount: amount,
+            expense: isExpense,
+        };
+
+        handleAdd(transaction);
+
+        setDesc("");
+        setAmount("");
     };
 
     return (

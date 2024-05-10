@@ -7,12 +7,12 @@ import {
     FaDollarSign,
 } from "react-icons/fa";
 
-const Resume = () => {
+const Resume = ({income, expense, total}) => {
     return (
         <CResume.Container>
-            <ResumeItem title={"Entradas"} icon={FaRegArrowAltCircleUp} value={"1000"}/>
-            <ResumeItem title={"Saídas"} icon={FaRegArrowAltCircleDown} value={"1000"}/>
-            <ResumeItem title={"Total"} icon={FaDollarSign} value={"1000"}/>
+            <ResumeItem title={"Entradas"} icon={FaRegArrowAltCircleUp} value={income}/>
+            <ResumeItem title={"Saídas"} icon={FaRegArrowAltCircleDown} value={expense}/>
+            <ResumeItem title={"Total"} icon={FaDollarSign} value={total}/>
         </CResume.Container>
     );
 };
