@@ -19,7 +19,7 @@ const GridItem = ({item, onDelete}) => {
                 )}
                 </CGrid.Td>
             <CGrid.Td alignCenter>
-                <FaTrash onClick={() => onDelete(item.id)} />
+                <FaTrash color={"red"} onClick={() => onDelete(item.id)} />
             </CGrid.Td>
         </CGrid.Tr>
     );
