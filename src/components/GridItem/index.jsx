@@ -10,12 +10,12 @@ const GridItem = ({item, onDelete}) => {
     return(
         <CGrid.Tr>
             <CGrid.Td>{item.desc}</CGrid.Td>
-            <CGrid.Td>{item.amount}</CGrid.Td>
+            <CGrid.Td>{`R$ ${item.amount}`}</CGrid.Td>
             <CGrid.Td alignCenter>
                 {item.expense ? (
-                    <FaRegArrowAltCircleDown color={"red"}/>
+                    <FaRegArrowAltCircleDown color={"red"} title={"Valor referente a uma saída"}/>
                 ) : (
-                    <FaRegArrowAltCircleUp color={"green"}/>
+                    <FaRegArrowAltCircleUp color={"green"} title={"Valor referente a uma entrada"}/>
                 )}
                 </CGrid.Td>
             <CGrid.Td alignCenter>
