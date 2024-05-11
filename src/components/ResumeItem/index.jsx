@@ -8,6 +8,7 @@ const ResumeItem = ({title, Icon, value}) => {
                 <CResumeItem.HeaderTitle>
                     {title}
                 </CResumeItem.HeaderTitle>
+                <Icon />
             </CResumeItem.Header>
             <CResumeItem.Total>
                 {value}

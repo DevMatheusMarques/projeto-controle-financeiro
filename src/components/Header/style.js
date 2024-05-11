@@ -7,10 +7,7 @@ export const Container = styled.div
         background: teal;
     `;
 
-export const Header = styled.h1
-    `
-    
-    `;
+export const Header = styled.h1``;
 
 export const Title = styled.div
     `

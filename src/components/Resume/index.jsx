@@ -10,9 +10,9 @@ import {
 const Resume = ({income, expense, total}) => {
     return (
         <CResume.Container>
-            <ResumeItem title={"Entradas"} icon={FaRegArrowAltCircleUp} value={income}/>
-            <ResumeItem title={"Saídas"} icon={FaRegArrowAltCircleDown} value={expense}/>
-            <ResumeItem title={"Total"} icon={FaDollarSign} value={total}/>
+            <ResumeItem title={"Entradas"} Icon={FaRegArrowAltCircleUp} value={income}/>
+            <ResumeItem title={"Saídas"} Icon={FaRegArrowAltCircleDown} value={expense}/>
+            <ResumeItem title={"Total"} Icon={FaDollarSign} value={total}/>
         </CResume.Container>
     );
 };
